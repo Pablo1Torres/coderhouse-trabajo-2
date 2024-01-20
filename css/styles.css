@@ -1,0 +1,68 @@
+/*Estilos Globales*/
+  *{
+      font-family: "Poppins", sans-serif;
+    }
+   ul{
+      list-style: none;
+    } 
+  .header{
+  background-color: rgba(32, 5, 5, 0.582);
+  height: 43vh;
+}
+.logo{
+  width: 4rem;
+  border-radius: 50%;
+}
+.encabezado{
+  color: rgb(224, 220, 220);
+  text-align: center;
+}
+/*inicio del main*/
+.texto-dif{
+  font-size: 300;
+  text-align: center;
+  color: brown;
+}
+/*carpeta productos*/
+.contenedor-productos{
+  display: flex;
+  flex-direction: column;
+}
+/*carpeta nosostros*/
+.texto-nosotros{
+  padding: 10px;
+}
+/*carpeta contacto*/
+.logo-red-social{
+  width: 3rem;
+  border-radius: 35%;
+}
+/*ajuste del tamaño de las fotos del main para los archivos: nosotros, contacto y productos*/
+.fotos-main{
+  width: 100%
+}
+/*responsive para los archivos: nosotros, contacto y productos
+(aclaro que lo trabajé con background color para chequear que el responsive funciona)*/
+@media only screen and (max-width:600px) {
+  .responsive{
+ background-color: rgb(245, 204, 154);}
+ }
+ @media only screen and (min-width:601px) and (max-width:900px) {
+ .responsive{
+  background-color: rgb(245, 225, 200);}
+ }
+ @media only screen and (min-width:901px) {
+  .responsive{
+ background-color: rgb(245, 204, 154);}
+ }
+/*footer*/
+.texto-footer{
+  background-color: rgba(32, 5, 5, 0.582);
+  color: white;
+  font-size: 10px;
+  text-align: end;
+  padding-right: 3rem;
+}
+
+
+  

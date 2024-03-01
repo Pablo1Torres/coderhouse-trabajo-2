@@ -1,29 +1,45 @@
 //Estilos Globales para main
 main{
-    h2{
+        h2{
+        height: 15vh;
         font-size: 300;
         text-align: center;
         color: $colorTituloMain;
     }
+    .texto-dif{
+        height: 22vh;
+        display: flex;
+        align-items: flex-end;
+    }
+    @media only screen and (max-width:320px) {
+        .texto-dif{
+        font-size: 20px;}
+        }
+    h3{
+        color: $colorTituloMain;
+    }
     .fotos-main{
         width: 100%;
-    }
+            }
+    .bordeMain{
+        margin-left: 5%; margin-right: 5%;
+        }
 // main carpeta inicio
     .backgroundInicio{
         background-color: nth($list: $coloresMain, $n: 1);
     }
 // main carpeta productos
 .backgroundProductos{
-    background-color: nth($list: $coloresMain, $n: 2);
+    background-color: nth($list: $coloresMain, $n: 1);
 }
 .contenedor-productos{
     display: flex;
     padding: auto;
-    flex-direction: column;}
-    
-.cardProducto{
-   margin: 5px;
+    flex-direction: column;
    }
+   .texto-productos{
+    color: $colorTituloMain;
+}
    @media only screen and (max-width:600px) {
     .texto-productos{
     font-size: 10px;}
@@ -38,15 +54,14 @@ main{
     }
 // main carpeta nosotros
 .backgroundNosotros{
-    background-color: nth($list: $coloresMain, $n: 3);
+    background-color: nth($list: $coloresMain, $n: 1);
 .texto-nosotros{
     @include text ($colorTextoMain,16px);
-    padding: 10px;
-    }
+        }
 }
 // main carpeta contacto
 .backgroundContacto{
-    background-color: nth($list: $coloresMain, $n: 4);
+    background-color: nth($list: $coloresMain, $n: 1);
 }
 .logo-red-social{
     width: 3rem;

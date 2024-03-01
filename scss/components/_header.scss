@@ -1,13 +1,15 @@
 header{
     background-color: $colorGris;
-    height: 43vh;
+    height: 25vh;
+    padding-left: 3%; padding-right: 3%;
     nav{
         img{ width: 4rem;
             border-radius: 50%;}
+    
         &:hover{
             transform: scale(1.05);
             transition: .31s;
-        }
+       }
     }
     h1{color: $colorTextoHeader;
         text-align: center;
